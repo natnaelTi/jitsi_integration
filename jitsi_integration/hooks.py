@@ -122,13 +122,23 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+    "Video Meeting": {
+        "after_insert": "jitsi_integration.jitsi_integration.doctype.video_meeting.video_meeting.notify_participants"
+    }
+}
+
+# Fixtures
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["name", "in", (
+                "Event-video_meeting",
+            )]
+        ]
+    }
+]
 
 # Scheduled Tasks
 # ---------------

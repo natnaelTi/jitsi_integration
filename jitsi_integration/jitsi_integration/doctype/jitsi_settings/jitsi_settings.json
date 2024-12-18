@@ -1,0 +1,48 @@
+{
+    "actions": [],
+    "autoname": "format:JIT-{#####}",
+    "creation": "2024-12-07 10:31:32.504056",
+    "doctype": "DocType",
+    "engine": "InnoDB",
+    "field_order": [
+        "jitsi_server_url",
+        "jwt_secret"
+    ],
+    "fields": [
+        {
+            "default": "meet.jit.si",
+            "fieldname": "jitsi_server_url",
+            "fieldtype": "Data",
+            "label": "Jitsi Server URL"
+        },
+        {
+            "fieldname": "jwt_secret",
+            "fieldtype": "Password",
+            "label": "JWT Secret"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "issingle": 1,
+    "links": [],
+    "modified": "2024-12-07 10:33:36.376969",
+    "modified_by": "Administrator",
+    "module": "Jitsi Integration",
+    "name": "Jitsi Settings",
+    "naming_rule": "Expression",
+    "owner": "Administrator",
+    "permissions": [
+        {
+            "create": 1,
+            "delete": 1,
+            "email": 1,
+            "print": 1,
+            "read": 1,
+            "role": "System Manager",
+            "share": 1,
+            "write": 1
+        }
+    ],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}
